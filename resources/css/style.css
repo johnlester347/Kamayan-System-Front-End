@@ -1,3 +1,6 @@
+/************************************************************/
+/* ----------- Basic Setup ---------------- */
+/************************************************************/
 * {
   margin: 0px;
   padding: 0px;
@@ -13,14 +16,65 @@ html {
   text-rendering: optimizeLegibility; /* This will render the font in a perfect way */
 }
 
+/************************************************************/
+/* ----------- REUSABLE COMPONENTS ---------------- */
+/************************************************************/
 .row {
   max-width: 1140px;
   margin: 0 auto;
 }
 
+/************************************************************/
+/* ----------- BUTTONS ---------------- */
+/************************************************************/
+.btn:link,
+.btn:visited {
+  display: inline-block; /* Pwede mong i set yung height, width, margin and padding */
+  font-size: 110%;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 200px;
+  padding: 10px 30px;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited {
+  background-color: #44bd32;
+  border: 1px solid #44bd32;
+  margin-right: 10px;
+  color: #fff;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+  border: 1px solid #44bd32;
+  color: #44bd32;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #3aa22b;
+}
+
+.btn-full:hover,
+.btn-full:active {
+  border: 1px solid #3aa22b;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+  border: 1px solid #3aa22b;
+  color: #fff;
+}
+
+/************************************************************/
+/* ----------- HEADER ---------------- */
+/************************************************************/
+
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(img/kamayan.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(img/kamayan-bg.jpg);
   height: 100vh;
   background-size: cover;
   background-position: center;
@@ -36,6 +90,43 @@ header {
 
 .hero-text-box h1 {
   margin-top: 0;
+  margin-bottom: 20px;
   color: #fff;
-  font-size: 200%; /* This is eqaul to 40px pixels because we set the global font size to 20 and we double it to make it 40px */
+  font-size: 240%; /* This is eqaul to 40px pixels because we set the global font size to 20 and we double it to make it 40px */
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.logo {
+  margin-top: 25px;
+  height: 60px;
+  width: auto;
+  float: left;
+}
+
+.main-nav {
+  float: right;
+  margin-top: 40px;
+  list-style: none;
+}
+
+.main-nav li {
+  margin-right: 40px;
+  float: left;
+  display: inline-block;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 90%;
+}
+
+.main-nav li:hover,
+.main-nav li:active {
+  padding-bottom: 10px;
+  border-bottom: 3px solid #3aa22b;
 }
