@@ -16,6 +16,16 @@ html {
   text-rendering: optimizeLegibility; /* This will render the font in a perfect way */
 }
 
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
 /************************************************************/
 /* ----------- REUSABLE COMPONENTS ---------------- */
 /************************************************************/
@@ -204,6 +214,56 @@ h3 {
   margin-bottom: 40px;
 }
 
+/************************************************************/
+/* ----------- SECTIOIN STEPS ---------------- */
+/************************************************************/
+
+.section-steps {
+  background-color: #f4f4f4;
+}
+
+.step-box:first-child {
+  text-align: right;
+  padding-right: 3%;
+  margin-top: 30px;
+}
+
+.step-box:last-child {
+  padding-left: 3%;
+  margin-top: 70px;
+}
+
+.app-screen {
+  width: 40%;
+}
+
+.work-steps {
+  margin-bottom: 50px;
+}
+
+.work-steps:last-of-type {
+  margin-bottom: 80px;
+}
+
+.work-steps div {
+  color: #44bd32;
+  border: 2px solid #44bd32;
+  display: inline-block;
+  border-radius: 50%;
+  height: 55px;
+  width: 55px;
+  text-align: center;
+  margin-right: 25px;
+  float: left;
+  padding: 5px;
+  font-size: 150%;
+}
+
+.btn-app img {
+  height: 50px;
+  width: auto;
+  margin-right: 10px;
+}
 /************************************************************/
 /* ----------- SECTION MEALS ---------------- */
 /************************************************************/
