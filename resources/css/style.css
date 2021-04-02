@@ -195,3 +195,48 @@ h3 {
   padding-bottom: 10px;
   border-bottom: 3px solid #3aa22b;
 }
+
+/************************************************************/
+/* ----------- SECTION FEATURES ---------------- */
+/************************************************************/
+
+.section-features .long-copy {
+  margin-bottom: 40px;
+}
+
+/************************************************************/
+/* ----------- SECTION MEALS ---------------- */
+/************************************************************/
+.section-meals {
+  padding: 0;
+}
+.meals-showcase {
+  list-style: none;
+  width: 100%;
+  padding: 0;
+}
+
+.meals-showcase li {
+  display: block;
+  float: left;
+  width: 25%;
+}
+
+.meal-photo {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.meal-photo img {
+  opacity: 0.7;
+  height: 300px;
+  width: 100%;
+  transform: scale(1.15);
+  transition: transform 0.5s, opacity 0.5s;
+}
+.meal-photo img:hover {
+  opacity: 1;
+  transform: scale(1.02);
+}
