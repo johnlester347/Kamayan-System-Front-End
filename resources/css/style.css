@@ -24,6 +24,23 @@ html {
   margin: 0 auto;
 }
 
+section {
+  padding: 80px 0;
+}
+
+.box {
+  padding: 1%;
+}
+
+/************************************************************/
+/* ----------- ICONS ---------------- */
+/************************************************************/
+.icon-big {
+  font-size: 300%;
+  display: block;
+  color: #3aa22b;
+  margin-bottom: 10px;
+}
 /************************************************************/
 /* ----------- BUTTONS ---------------- */
 /************************************************************/
@@ -69,15 +86,61 @@ html {
 }
 
 /************************************************************/
+/* ----------- PARAGRAPHS ---------------- */
+/************************************************************/
+
+.long-copy {
+  line-height: 145%;
+  width: 70%;
+  margin-left: 15%;
+  /* para ma center yung paragraph kailangan natin hatiin yung remaining 30% from width so need natin hatiin yung 30% for both sides  */
+  margin-bottom: 30px;
+}
+
+.box p {
+  font-size: 90%;
+  line-height: 145%;
+}
+
+/************************************************************/
 /* ----------- HEADER ---------------- */
 /************************************************************/
 
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(img/kamayan-bg.jpg);
   height: 100vh;
   background-size: cover;
   background-position: center;
+}
+
+h2 {
+  text-align: center;
+  word-wrap: 2px;
+  color: rgb(100, 100, 100);
+  font-size: 180%; /* This is eqaul to 40px pixels because we set the global font size to 20 and we double it to make it 40px */
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 30px;
+}
+
+h2::after {
+  /* Sa baba ng h2 IMPORTANT KAPAG GAGAMIT KA NG PSEUDO CLASS KAILANGAN MO I SET YUNG CONTENT */
+  display: block;
+  height: 2px;
+  background-color: #3aa22b;
+  content: "";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+h3 {
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 110%;
+  margin-bottom: 15px;
 }
 
 .hero-text-box {
