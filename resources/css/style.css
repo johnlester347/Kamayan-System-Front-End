@@ -51,6 +51,19 @@ section {
   color: #3aa22b;
   margin-bottom: 10px;
 }
+
+.icon-small {
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+  color: #44bd32;
+  font-size: 120%;
+  margin-right: 10px;
+  /* Secrete to align text and icons */
+  line-height: 120%;
+  vertical-align: middle;
+  margin-top: -5px;
+}
 /************************************************************/
 /* ----------- BUTTONS ---------------- */
 /************************************************************/
@@ -259,6 +272,11 @@ h3 {
   font-size: 150%;
 }
 
+.btn-app:link,
+.btn-app:visited {
+  border: 0;
+}
+
 .btn-app img {
   height: 50px;
   width: auto;
@@ -296,7 +314,64 @@ h3 {
   transform: scale(1.15);
   transition: transform 0.5s, opacity 0.5s;
 }
+
 .meal-photo img:hover {
   opacity: 1;
   transform: scale(1.02);
+}
+
+/************************************************************/
+/* ----------- SECTION CITIES ---------------- */
+/************************************************************/
+/* .cities img {
+  height: 150px;
+  width: 100%;
+}
+
+.cities-box h3 {
+  margin-top: 15px;
+}
+
+.cities-box p {
+  line-height: 150%;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.cities-box {
+  padding: 15px;
+}
+
+.icon-small {
+  display: inline-block;
+  color: #44bd32;
+  margin-right: 15px;
+  height: 20px;
+  width: 20px;
+} */
+
+.box img {
+  width: 100%;
+  height: 150px;
+  margin-bottom: 15px;
+}
+
+.city-feature {
+  margin-bottom: 5px;
+}
+
+.city-feature a:link,
+.city-feature a:visited {
+  text-decoration: none;
+  color: #44bd32;
+  padding-bottom: 1px;
+  border-bottom: 1px solid #44bd32;
+  transition: text-decoration 0.5s, color 0.5s;
+}
+
+.city-feature a:hover,
+.city-feature a:active {
+  text-decoration: none;
+  border-bottom: none;
+  color: #3f3f3f;
 }
