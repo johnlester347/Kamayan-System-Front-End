@@ -135,6 +135,7 @@ header {
   height: 100vh;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
 }
 
 h2 {
@@ -323,32 +324,6 @@ h3 {
 /************************************************************/
 /* ----------- SECTION CITIES ---------------- */
 /************************************************************/
-/* .cities img {
-  height: 150px;
-  width: 100%;
-}
-
-.cities-box h3 {
-  margin-top: 15px;
-}
-
-.cities-box p {
-  line-height: 150%;
-  font-size: 20px;
-  font-weight: 300;
-}
-
-.cities-box {
-  padding: 15px;
-}
-
-.icon-small {
-  display: inline-block;
-  color: #44bd32;
-  margin-right: 15px;
-  height: 20px;
-  width: 20px;
-} */
 
 .box img {
   width: 100%;
@@ -374,4 +349,49 @@ h3 {
   text-decoration: none;
   border-bottom: none;
   color: #3f3f3f;
+}
+
+/************************************************************/
+/* ----------- SECTION TESTIMONIALS ---------------- */
+/************************************************************/
+.section-testimonials {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../../resources/img/6.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+.section-testimonials h2 {
+  color: #fff;
+}
+
+blockquote {
+  padding: 2%;
+  font-style: italic;
+  line-height: 140%;
+  position: relative;
+  margin-top: 40px;
+}
+
+blockquote:before {
+  content: "\201C";
+  font-size: 400%;
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+}
+
+cite {
+  font-size: 90%;
+  margin-top: 25px;
+  display: block; /* To start to a new line */
+}
+
+cite img {
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 10px;
+  vertical-align: middle;
 }
