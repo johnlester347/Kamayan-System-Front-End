@@ -68,7 +68,8 @@ section {
 /* ----------- BUTTONS ---------------- */
 /************************************************************/
 .btn:link,
-.btn:visited {
+.btn:visited,
+input[type="submit"] {
   display: inline-block; /* Pwede mong i set yung height, width, margin and padding */
   font-size: 110%;
   font-weight: 300;
@@ -79,7 +80,8 @@ section {
 }
 
 .btn-full:link,
-.btn-full:visited {
+.btn-full:visited,
+input[type="submit"] {
   background-color: #44bd32;
   border: 1px solid #44bd32;
   margin-right: 10px;
@@ -98,7 +100,9 @@ section {
 }
 
 .btn-full:hover,
-.btn-full:active {
+.btn-full:active,
+input[type="submit"]:hover,
+input[type="submit"]:active {
   border: 1px solid #3aa22b;
 }
 
@@ -399,7 +403,6 @@ cite img {
 /************************************************************/
 /* ----------- SECTION PLANS ---------------- */
 /************************************************************/
-
 .section-plans {
   background-color: #f4f4f4;
 }
@@ -450,4 +453,34 @@ cite img {
 
 .plan-box ul li {
   padding: 5px 0;
+}
+
+/************************************************************/
+/* ----------- SECTION CONTACT---------------- */
+/************************************************************/
+.contact-form {
+  width: 60%;
+  margin: 0 auto;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 7px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  height: 100px;
+}
+
+input[type="checkbox"] {
+  margin: 10px 5px 10px 0;
+}
+
+*:focus {
+  outline: none;
 }
