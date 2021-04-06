@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kamayan Restaurant</title>
-    <link rel="stylesheet" href="resources/css/login.css" />
+    <link rel="stylesheet" href="resources/css/registration.css" />
     <link rel="stylesheet" href="vendors/css/normalize.css" />
     <link rel="stylesheet" href="vendors/css/grid.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -18,11 +18,53 @@
     <header>
       <nav>
         <div class="row">
-          <h2 class="login-header">We're happy to serve you login now!</h2>
+          <h2 class="login-header">We're happy to serve you register now!</h2>
         </div>
         <div class="row">
           <div class="form-box">
-            <form action="index.html" method="post" autocomplete="off">
+            <form action="login.html" method="post" autocomplete="off">
+              <div class="row">
+                <div class="col span-1-of-3">
+                  <label for="fname">Firstname</label>
+                </div>
+                <div class="col span-2-of-3">
+                  <input
+                    type="text"
+                    name="fname"
+                    id="fname"
+                    placeholder="Enter your firstname"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col span-1-of-3">
+                  <label for="lname">Lastname</label>
+                </div>
+                <div class="col span-2-of-3">
+                  <input
+                    type="text"
+                    name="lname"
+                    id="lname"
+                    placeholder="Enter your lastname"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col span-1-of-3">
+                  <label for="number">Mobile Number</label>
+                </div>
+                <div class="col span-2-of-3">
+                  <input
+                    type="text"
+                    name="number"
+                    id="number"
+                    placeholder="Enter your number"
+                    required
+                  />
+                </div>
+              </div>
               <div class="row">
                 <div class="col span-1-of-3">
                   <label for="email">Email</label>
@@ -69,24 +111,15 @@
                 </div>
               </div> -->
 
-              <a href="forgot_pass.html">forgot password</a>
               <div class="row">
                 <div class="button">
                   <input
                     type="submit"
                     name="submit"
                     class="btn btn-full"
-                    value="Login"
+                    value="Register"
                   />
                 </div>
-              </div>
-
-              <div class="signup">
-                Dont have an account?<a
-                  href="registration.html"
-                  class="signup-button"
-                  >Sign up here</a
-                >
               </div>
             </form>
           </div>

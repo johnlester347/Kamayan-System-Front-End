@@ -27,26 +27,14 @@ header {
   background-attachment: fixed;
 }
 
-h2 {
+h3 {
   text-align: center;
   word-wrap: 2px;
-  color: rgb(255, 255, 255);
-  font-size: 180%; /* This is eqaul to 40px pixels because we set the global font size to 20 and we double it to make it 40px */
-  font-weight: 300;
+  color: rgb(0, 255, 128);
+  font-size: 120%; /* This is eqaul to 40px pixels because we set the global font size to 20 and we double it to make it 40px */
   text-transform: uppercase;
   letter-spacing: 4px;
-  margin-bottom: 50px;
-}
-
-h2::after {
-  /* Sa baba ng h2 IMPORTANT KAPAG GAGAMIT KA NG PSEUDO CLASS KAILANGAN MO I SET YUNG CONTENT */
-  display: block;
-  height: 2px;
-  background-color: #3aa22b;
-  content: "";
-  width: 100px;
-  margin: 0 auto;
-  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .form-box {
@@ -55,16 +43,7 @@ h2::after {
   box-shadow: 0 2px 2px #efefef;
   margin: 0 auto;
   padding: 50px;
-}
-
-.login-header {
-  margin-top: 60px;
-}
-
-.password-form {
-  width: 100%;
-  height: 40px;
-  border: 1px solid rgb(214, 214, 214);
+  margin-top: 100px;
 }
 
 .button {
@@ -72,7 +51,6 @@ h2::after {
 }
 
 input[type="submit"],
-input[type="password"],
 input[type="email"] {
   width: 100%;
   height: 40px;
@@ -99,6 +77,9 @@ input[type="submit"] {
   border: 1px solid #44bd32;
   margin-right: 10px;
   color: #fff;
+  text-transform: uppercase;
+  font-family: Arial;
+  font-size: 80%;
 }
 
 .btn:hover,
@@ -111,31 +92,6 @@ input[type="submit"] {
 input[type="submit"]:hover,
 input[type="submit"]:active {
   border: 1px solid #3aa22b;
-}
-
-a {
-  text-decoration: none;
-  float: right;
-  padding: 10px;
-  margin-bottom: 10px;
-  color: #00a2ff;
-  display: block;
-  font-size: 80%;
-}
-
-.signup {
-  margin-top: 10px;
-  border-top: 1px solid rgb(182, 182, 182);
-  font-size: 80%;
-  /* word-spacing: -1px; */
-}
-
-.signup-button {
-  float: none;
-  color: #44bd32;
-  display: inline-block;
-  margin-top: 10px;
-  font-size: 100%;
 }
 
 form label {
