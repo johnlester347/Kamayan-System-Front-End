@@ -10,7 +10,8 @@ html {
   font-family: "Lato", "Arial", sans-serif;
   font-size: 20px;
   font-weight: 300;
-  text-rendering: optimizeLegibility; /* This will render the font in a perfect way */
+  text-rendering: optimizeLegibility;
+  /* This will render the font in a perfect way */
 }
 
 .row {
@@ -19,8 +20,7 @@ html {
 }
 
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(img/kamayan-bg.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/kamayan-bg.jpg);
   height: 100vh;
   background-size: cover;
   background-position: center;
@@ -31,7 +31,8 @@ h3 {
   text-align: center;
   word-wrap: 2px;
   color: rgb(0, 255, 128);
-  font-size: 120%; /* This is eqaul to 40px pixels because we set the global font size to 20 and we double it to make it 40px */
+  font-size: 120%;
+  /* This is eqaul to 40px pixels because we set the global font size to 20 and we double it to make it 40px */
   text-transform: uppercase;
   letter-spacing: 4px;
   margin-bottom: 30px;
@@ -50,8 +51,7 @@ h3 {
   padding-top: 20px;
 }
 
-input[type="submit"],
-input[type="email"] {
+input[type="submit"], input[type="email"] {
   width: 100%;
   height: 40px;
   margin-bottom: 10px;
@@ -59,9 +59,9 @@ input[type="email"] {
   font-weight: 300;
 }
 
-.btn:link,
-.btn:visited {
-  display: inline-block; /* Pwede mong i set yung height, width, margin and padding */
+.btn:link, .btn:visited {
+  display: inline-block;
+  /* Pwede mong i set yung height, width, margin and padding */
   font-size: 110%;
   font-weight: 300;
   text-decoration: none;
@@ -70,9 +70,7 @@ input[type="email"] {
   transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
 
-.btn-full:link,
-.btn-full:visited,
-input[type="submit"] {
+.btn-full:link, .btn-full:visited, input[type="submit"] {
   background-color: #44bd32;
   border: 1px solid #44bd32;
   margin-right: 10px;
@@ -82,15 +80,11 @@ input[type="submit"] {
   font-size: 80%;
 }
 
-.btn:hover,
-.btn:active {
+.btn:hover, .btn:active {
   background-color: #3aa22b;
 }
 
-.btn-full:hover,
-.btn-full:active,
-input[type="submit"]:hover,
-input[type="submit"]:active {
+.btn-full:hover, .btn-full:active, input[type="submit"]:hover, input[type="submit"]:active {
   border: 1px solid #3aa22b;
 }
 

@@ -1,24 +1,39 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /************************************************************/
+
 /* ----------- Basic Setup ---------------- */
+
 /************************************************************/
+
 * {
   margin: 0px;
   padding: 0px;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-html {
+html, body {
   background-color: #fff;
   color: #555;
   font-family: "Lato", "Arial", sans-serif;
   font-size: 20px;
   font-weight: 300;
-  text-rendering: optimizeLegibility; /* This will render the font in a perfect way */
+  text-rendering: optimizeLegibility;
+  /* This will render the font in a perfect way */
+  overflow-x: hidden;
+  /* Ginagamit to para yung mga lumagpas sa width ng site is ma hide */
 }
 
 .clearfix {
   zoom: 1;
 }
+
 .clearfix:after {
   content: ".";
   clear: both;
@@ -26,9 +41,13 @@ html {
   height: 0;
   visibility: hidden;
 }
+
 /************************************************************/
+
 /* ----------- REUSABLE COMPONENTS ---------------- */
+
 /************************************************************/
+
 .row {
   max-width: 1140px;
   margin: 0 auto;
@@ -43,8 +62,11 @@ section {
 }
 
 /************************************************************/
+
 /* ----------- ICONS ---------------- */
+
 /************************************************************/
+
 .icon-big {
   font-size: 300%;
   display: block;
@@ -64,56 +86,54 @@ section {
   vertical-align: middle;
   margin-top: -5px;
 }
+
 /************************************************************/
+
 /* ----------- BUTTONS ---------------- */
+
 /************************************************************/
-.btn:link,
-.btn:visited,
-input[type="submit"] {
-  display: inline-block; /* Pwede mong i set yung height, width, margin and padding */
+
+.btn:link, .btn:visited, input[type="submit"] {
+  display: inline-block;
+  /* Pwede mong i set yung height, width, margin and padding */
   font-size: 110%;
   font-weight: 300;
   text-decoration: none;
   border-radius: 200px;
   padding: 10px 30px;
+  -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
   transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
 
-.btn-full:link,
-.btn-full:visited,
-input[type="submit"] {
+.btn-full:link, .btn-full:visited, input[type="submit"] {
   background-color: #44bd32;
   border: 1px solid #44bd32;
   margin-right: 10px;
   color: #fff;
 }
 
-.btn-ghost:link,
-.btn-ghost:visited {
+.btn-ghost:link, .btn-ghost:visited {
   border: 1px solid #44bd32;
   color: #44bd32;
 }
 
-.btn:hover,
-.btn:active {
+.btn:hover, .btn:active {
   background-color: #3aa22b;
 }
 
-.btn-full:hover,
-.btn-full:active,
-input[type="submit"]:hover,
-input[type="submit"]:active {
+.btn-full:hover, .btn-full:active, input[type="submit"]:hover, input[type="submit"]:active {
   border: 1px solid #3aa22b;
 }
 
-.btn-ghost:hover,
-.btn-ghost:active {
+.btn-ghost:hover, .btn-ghost:active {
   border: 1px solid #3aa22b;
   color: #fff;
 }
 
 /************************************************************/
+
 /* ----------- PARAGRAPHS ---------------- */
+
 /************************************************************/
 
 .long-copy {
@@ -130,12 +150,14 @@ input[type="submit"]:active {
 }
 
 /************************************************************/
+
 /* ----------- HEADER ---------------- */
+
 /************************************************************/
 
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(img/kamayan-bg.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(img/kamayan-bg.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/kamayan-bg.jpg);
   height: 100vh;
   background-size: cover;
   background-position: center;
@@ -146,7 +168,8 @@ h2 {
   text-align: center;
   word-wrap: 2px;
   color: rgb(100, 100, 100);
-  font-size: 180%; /* This is eqaul to 40px pixels because we set the global font size to 20 and we double it to make it 40px */
+  font-size: 180%;
+  /* This is eqaul to 40px pixels because we set the global font size to 20 and we double it to make it 40px */
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -172,10 +195,12 @@ h3 {
 }
 
 .hero-text-box {
-  position: absolute; /* We can now move all the text inside the hero anywhere we want */
+  position: absolute;
+  /* We can now move all the text inside the hero anywhere we want */
   width: 1140px;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
@@ -183,7 +208,8 @@ h3 {
   margin-top: 0;
   margin-bottom: 20px;
   color: #fff;
-  font-size: 240%; /* This is eqaul to 40px pixels because we set the global font size to 20 and we double it to make it 40px */
+  font-size: 240%;
+  /* This is eqaul to 40px pixels because we set the global font size to 20 and we double it to make it 40px */
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -207,25 +233,27 @@ h3 {
   display: inline-block;
 }
 
-.main-nav li a:link,
-.main-nav li a:visited {
+.main-nav li a:link, .main-nav li a:visited {
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 90%;
   border-bottom: 3px solid transparent;
+  -webkit-transition: border-bottom 0.2s;
   transition: border-bottom 0.2s;
 }
 
-.main-nav li:hover,
-.main-nav li:active {
+.main-nav li:hover, .main-nav li:active {
+  -webkit-transition: border-bottom 0.2s;
   transition: border-bottom 0.2s;
   padding-bottom: 10px;
   border-bottom: 3px solid #3aa22b;
 }
 
 /************************************************************/
+
 /* ----------- SECTION FEATURES ---------------- */
+
 /************************************************************/
 
 .section-features .long-copy {
@@ -233,7 +261,9 @@ h3 {
 }
 
 /************************************************************/
+
 /* ----------- SECTIOIN STEPS ---------------- */
+
 /************************************************************/
 
 .section-steps {
@@ -277,8 +307,7 @@ h3 {
   font-size: 150%;
 }
 
-.btn-app:link,
-.btn-app:visited {
+.btn-app:link, .btn-app:visited {
   border: 0;
 }
 
@@ -287,12 +316,17 @@ h3 {
   width: auto;
   margin-right: 10px;
 }
+
 /************************************************************/
+
 /* ----------- SECTION MEALS ---------------- */
+
 /************************************************************/
+
 .section-meals {
   padding: 0;
 }
+
 .meals-showcase {
   list-style: none;
   width: 100%;
@@ -316,17 +350,24 @@ h3 {
   opacity: 0.7;
   height: 300px;
   width: 100%;
+  -webkit-transform: scale(1.15);
   transform: scale(1.15);
+  -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, -webkit-transform 0.5s;
   transition: transform 0.5s, opacity 0.5s;
+  transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
 }
 
 .meal-photo img:hover {
   opacity: 1;
+  -webkit-transform: scale(1.02);
   transform: scale(1.02);
 }
 
 /************************************************************/
+
 /* ----------- SECTION CITIES ---------------- */
+
 /************************************************************/
 
 .box img {
@@ -339,28 +380,32 @@ h3 {
   margin-bottom: 5px;
 }
 
-.city-feature a:link,
-.city-feature a:visited {
+.city-feature a:link, .city-feature a:visited {
   text-decoration: none;
   color: #44bd32;
   padding-bottom: 1px;
   border-bottom: 1px solid #44bd32;
+  transition: color 0.5s, -webkit-text-decoration 0.5s;
+  -webkit-transition: color 0.5s, -webkit-text-decoration 0.5s;
   transition: text-decoration 0.5s, color 0.5s;
+  transition: text-decoration 0.5s, color 0.5s, -webkit-text-decoration 0.5s;
 }
 
-.city-feature a:hover,
-.city-feature a:active {
+.city-feature a:hover, .city-feature a:active {
   text-decoration: none;
   border-bottom: none;
   color: #3f3f3f;
 }
 
 /************************************************************/
+
 /* ----------- SECTION TESTIMONIALS ---------------- */
+
 /************************************************************/
+
 .section-testimonials {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(../../resources/img/6.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(../../resources/img/6.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../../resources/img/6.jpg);
   background-size: cover;
   background-attachment: fixed;
   color: #fff;
@@ -390,7 +435,8 @@ blockquote:before {
 cite {
   font-size: 90%;
   margin-top: 25px;
-  display: block; /* To start to a new line */
+  display: block;
+  /* To start to a new line */
 }
 
 cite img {
@@ -401,8 +447,11 @@ cite img {
 }
 
 /************************************************************/
+
 /* ----------- SECTION PLANS ---------------- */
+
 /************************************************************/
+
 .section-plans {
   background-color: #f4f4f4;
 }
@@ -412,6 +461,7 @@ cite img {
   border-radius: 5px;
   width: 90%;
   margin-left: 5%;
+  -webkit-box-shadow: 0 2px 2px #efefef;
   box-shadow: 0 2px 2px #efefef;
 }
 
@@ -456,17 +506,17 @@ cite img {
 }
 
 /************************************************************/
+
 /* ----------- SECTION CONTACT---------------- */
+
 /************************************************************/
+
 .contact-form {
   width: 60%;
   margin: 0 auto;
 }
 
-input[type="text"],
-input[type="email"],
-select,
-textarea {
+input[type="text"], input[type="email"], select, textarea {
   width: 100%;
   padding: 7px;
   border-radius: 3px;
@@ -487,8 +537,11 @@ input[type="checkbox"] {
 }
 
 /************************************************************/
+
 /* ----------- FOOTER ---------------- */
+
 /************************************************************/
+
 footer {
   background-color: #333;
   color: #888;
@@ -506,40 +559,32 @@ footer {
   float: right;
 }
 
-.footer-nav li,
-.social-links li {
+.footer-nav li, .social-links li {
   display: inline-block;
   margin-right: 20px;
 }
 
-.footer-nav li:last-child,
-.social-links li:last-child {
+.footer-nav li:last-child, .social-links li:last-child {
   margin-right: 0;
 }
 
-.footer-nav li a:link,
-.footer-nav li a:visited,
-.social-links li a:link,
-.social-links li a:visited {
+.footer-nav li a:link, .footer-nav li a:visited, .social-links li a:link, .social-links li a:visited {
   text-decoration: none;
   color: #888;
+  -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
 
-.footer-nav li a:hover,
-.footer-nav li a:active {
+.footer-nav li a:hover, .footer-nav li a:active {
   color: #ddd;
 }
 
-.social-links li a:link,
-.social-links li a:visited {
+.social-links li a:link, .social-links li a:visited {
   font-size: 160%;
 }
 
-.facebook-icon,
-.twitter-icon,
-.google-icon,
-.instagram-icon {
+.facebook-icon, .twitter-icon, .google-icon, .instagram-icon {
+  -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
 
