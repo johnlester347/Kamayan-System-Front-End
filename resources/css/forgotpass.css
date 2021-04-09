@@ -1,94 +1,102 @@
 * {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
 html {
-  background-color: #fff;
-  color: #555;
-  font-family: "Lato", "Arial", sans-serif;
-  font-size: 20px;
-  font-weight: 300;
-  text-rendering: optimizeLegibility;
-  /* This will render the font in a perfect way */
+    background-color: #fff;
+    color: #555;
+    font-family: "Lato", "Arial", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    /* This will render the font in a perfect way */
 }
 
 .row {
-  max-width: 1140px;
-  margin: 0 auto;
+    max-width: 1140px;
+    margin: 0 auto;
 }
 
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/kamayan-bg.jpg);
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/kamayan-bg.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 h3 {
-  text-align: center;
-  word-wrap: 2px;
-  color: rgb(0, 255, 128);
-  font-size: 120%;
-  /* This is eqaul to 40px pixels because we set the global font size to 20 and we double it to make it 40px */
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  margin-bottom: 30px;
+    text-align: center;
+    word-wrap: 2px;
+    color: rgb(0, 255, 128);
+    font-size: 120%;
+    /* This is eqaul to 40px pixels because we set the global font size to 20 and we double it to make it 40px */
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 30px;
 }
 
 .form-box {
-  background-color: rgb(255, 255, 255);
-  width: 50%;
-  box-shadow: 0 2px 2px #efefef;
-  margin: 0 auto;
-  padding: 50px;
-  margin-top: 100px;
+    background-color: rgb(255, 255, 255);
+    width: 50%;
+    box-shadow: 0 2px 2px #efefef;
+    margin: 0 auto;
+    padding: 50px;
+    margin-top: 100px;
 }
 
 .button {
-  padding-top: 20px;
+    padding-top: 20px;
 }
 
-input[type="submit"], input[type="email"] {
-  width: 100%;
-  height: 40px;
-  margin-bottom: 10px;
-  border: 1px solid rgb(214, 214, 214);
-  font-weight: 300;
+input[type="submit"],
+input[type="email"] {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(214, 214, 214);
+    font-weight: 300;
 }
 
-.btn:link, .btn:visited {
-  display: inline-block;
-  /* Pwede mong i set yung height, width, margin and padding */
-  font-size: 110%;
-  font-weight: 300;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-top: 20px;
-  transition: background-color 0.2s, border 0.2s, color 0.2s;
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    /* Pwede mong i set yung height, width, margin and padding */
+    font-size: 110%;
+    font-weight: 300;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin-top: 20px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
 
-.btn-full:link, .btn-full:visited, input[type="submit"] {
-  background-color: #44bd32;
-  border: 1px solid #44bd32;
-  margin-right: 10px;
-  color: #fff;
-  text-transform: uppercase;
-  font-family: Arial;
-  font-size: 80%;
+.btn-full:link,
+.btn-full:visited,
+input[type="submit"] {
+    background-color: #44bd32;
+    border: 1px solid #44bd32;
+    margin-right: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: Arial;
+    font-size: 80%;
 }
 
-.btn:hover, .btn:active {
-  background-color: #3aa22b;
+.btn:hover,
+.btn:active {
+    background-color: #3aa22b;
 }
 
-.btn-full:hover, .btn-full:active, input[type="submit"]:hover, input[type="submit"]:active {
-  border: 1px solid #3aa22b;
+.btn-full:hover,
+.btn-full:active,
+input[type="submit"]:hover,
+input[type="submit"]:active {
+    border: 1px solid #3aa22b;
 }
 
 form label {
-  padding-top: 10px;
-  display: inline-block;
+    padding-top: 10px;
+    display: inline-block;
 }

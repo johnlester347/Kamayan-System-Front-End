@@ -1,0 +1,16 @@
+/* Big tablet to 1200px (widths smaller than the 1140px row) */
+
+@media only screen and (max-width: 1200px) {
+    .form-box {
+        width: 80%;
+    }
+}
+
+
+/* Small tablets to big tablet: from 768px to 1023px */
+
+@media only screen and (max-width: 1023px) {
+    .form-box {
+        width: 80%;
+    }
+}

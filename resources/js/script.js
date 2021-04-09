@@ -1,7 +1,7 @@
-$(document).ready(function () {
+$(document).ready(function() {
 
     /* Sticky nav */
-    $('.js--section-features').waypoint(function (direction) {
+    $('.js--section-features').waypoint(function(direction) {
         if (direction == "down") {
             $('nav').addClass('sticky');
         } else {
@@ -13,10 +13,10 @@ $(document).ready(function () {
 
 
     /* Scroll on buttons */
-    $('.js--scroll-to-plans').click(function () {
+    $('.js--scroll-to-plans').click(function() {
         $('html, body').animate({ scrollTop: $('.js--section-plans').offset().top }, 1000);
     });
-    $('.js--scroll-to-start').click(function () {
+    $('.js--scroll-to-start').click(function() {
         $('html, body').animate({ scrollTop: $('.js--section-features').offset().top }, 1000);
     });
 
@@ -26,11 +26,10 @@ $(document).ready(function () {
         // Remove links that don't actually link to anything
         .not('[href="#"]')
         .not('[href="#0"]')
-        .click(function (event) {
+        .click(function(event) {
             // On-page links
             if (
-                location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
-                &&
+                location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
                 location.hostname == this.hostname
             ) {
                 // Figure out element to scroll to
@@ -42,7 +41,7 @@ $(document).ready(function () {
                     event.preventDefault();
                     $('html, body').animate({
                         scrollTop: target.offset().top
-                    }, 1000, function () {
+                    }, 1000, function() {
                         // Callback after animation
                         // Must change focus!
                         var $target = $(target);
@@ -59,39 +58,39 @@ $(document).ready(function () {
         });
 
     /* Waypoint and animate.css */
-    $('.js--wp-1').waypoint(function (direction) {
+    $('.js--wp-1').waypoint(function(direction) {
         $('.js--wp-1').addClass('animate__animated animate__fadeIn');
     }, {
         offset: '50%', // mag aanimate sya pag scroll mo sa kalahati ng page 
     });
 
-    $('.js--wp-2').waypoint(function (direction) {
+    $('.js--wp-2').waypoint(function(direction) {
         $('.js--wp-2').addClass('animate__animated animate__fadeInUp');
         // mag aanimate sya pag scroll mo sa kalahati ng page 
     }, {
         offset: '50%', // mag aanimate sya pag scroll mo sa kalahati ng page 
     });
 
-    $('.js--wp-3').waypoint(function (direction) {
+    $('.js--wp-3').waypoint(function(direction) {
         $('.js--wp-3').addClass('animate__animated animate__fadeIn');
     }, {
         offset: '50%', // mag aanimate sya pag scroll mo sa kalahati ng page 
     });
 
-    $('.js--wp-4').waypoint(function (direction) {
+    $('.js--wp-4').waypoint(function(direction) {
         $('.js--wp-4').addClass('animate__animated animate__pulse');
     }, {
         offset: '50%', // mag aanimate sya pag scroll mo sa kalahati ng page 
     });
 
-    $('.js--wp-5').waypoint(function (direction) {
+    $('.js--wp-5').waypoint(function(direction) {
         $('.js--wp-5').addClass('animate__animated animate__fadeInLeft');
     }, {
         offset: '90%', // mag aanimate sya pag scroll mo sa kalahati ng page 
     });
 
 
-    $('.js--nav-icon').click(function () {
+    $('.js--nav-icon').click(function() {
 
         var nav = $('.js--main-nav');
 

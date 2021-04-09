@@ -258,7 +258,10 @@ h3 {
     width: auto;
     float: left;
 }
+
+
 /*****Mobile Navi *****/
+
 .mobile-nav-icon {
     float: right;
     margin-top: 30px;
@@ -270,6 +273,7 @@ h3 {
     font-size: 200%;
     color: #fff;
 }
+
 
 /*****Main Navi *****/
 
@@ -306,7 +310,7 @@ h3 {
 
 /*****Sticky Navi *****/
 
-.sticky {   
+.sticky {
     position: fixed;
     top: 0;
     left: 0;
@@ -736,7 +740,11 @@ footer p {
 
 
 /************************************************************/
+
+
 /* Simple fade transition */
+
+
 /***********************************************************/
 
 .mfp-fade.mfp-bg {
@@ -768,6 +776,7 @@ footer p {
 .mfp-fade.mfp-wrap.mfp-removing .mfp-content {
     opacity: 0;
 }
+
 
 /************************************************************/
 
@@ -807,6 +816,3 @@ footer p {
 .js--wp-5 {
     animation-duration: 1s;
 }
-
-
-
