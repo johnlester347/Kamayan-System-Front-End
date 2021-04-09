@@ -13,25 +13,29 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap"
         rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 
 <body>
     <header>
-        <nav class="sticky">
+        <nav class="">
             <div class="row">
                 <img class="logo" src="resources/css/img/kamayan-new-logo.png" alt="" />
                 <img class="logo_black" src="resources/css/img/Kamayan-logo-black.png" alt="" />
-                <ul class="main-nav">
+                <ul class="main-nav js--main-nav">
                     <li><a href="#features">Food delivery</a></li>
                     <li><a href="#works">How it works</a></li>
                     <li><a href="#province">Our cities</a></li>
                     <li><a href="#plans">Sign up</a></li>
                     <li><a href="login.html">Logout</a></li>
                 </ul>
+                <a class="mobile-nav-icon js--nav-icon">
+                    <ion-icon name="menu"></ion-icon>
+                </a>
             </div>
         </nav>
-        <div class="hero-text-box">
-            <h1>
+        <div class="hero-text-box ">
+            <h1 class="js--wp-5">
                 Welcome to Kamayan.<br /> Every meal is a happy meal.
             </h1>
             <a class="btn btn-full js--scroll-to-plans" href="#">I'm hungry</a>
@@ -47,7 +51,7 @@
                 cooking. So let us take care of that, we’re really good at it, we promise!
             </p>
         </div>
-        <div class="row">
+        <div class="row js--wp-1">
             <div class="col span-1-of-4 box">
                 <ion-icon name="infinite-outline" class="icon-big"></ion-icon>
                 <h3>Up to 365 days/year</h3>
@@ -136,7 +140,7 @@
         </div>
         <div class="row">
             <div class="col span-1-of-2 step-box">
-                <img class="app-screen" src="resources/img/app-iPhone.png" alt="iphone_logo" />
+                <img class="app-screen js--wp-2" src="resources/img/app-iPhone.png" alt="iphone_logo" />
             </div>
             <div class="col span-1-of-2 step-box">
                 <div class="work-steps">
@@ -167,7 +171,7 @@
         <div class="row">
             <h2>We're currently in these cities</h2>
         </div>
-        <div class="row">
+        <div class="row js--wp-3">
             <div class="col span-1-of-4 box">
                 <img src="resources/img/licab4.jfif" alt="" />
                 <h3>Licab</h3>
@@ -264,7 +268,7 @@
         </div>
         <div class="row">
             <div class="col span-1-of-3">
-                <div class="plan-box">
+                <div class="plan-box js--wp-4">
                     <div>
                         <h3>Premium</h3>
                         <p class="plan-price">&#8369;499 <span>/ month</span></p>

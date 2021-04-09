@@ -1,5 +1,6 @@
 $(document).ready(function () {
 
+    /* Sticky nav */
     $('.js--section-features').waypoint(function (direction) {
         if (direction == "down") {
             $('nav').addClass('sticky');
@@ -57,5 +58,47 @@ $(document).ready(function () {
             }
         });
 
-});
+    /* Waypoint and animate.css */
+    $('.js--wp-1').waypoint(function (direction) {
+        $('.js--wp-1').addClass('animate__animated animate__fadeIn');
+    }, {
+        offset: '50%', // mag aanimate sya pag scroll mo sa kalahati ng page 
+    });
 
+    $('.js--wp-2').waypoint(function (direction) {
+        $('.js--wp-2').addClass('animate__animated animate__fadeInUp');
+        // mag aanimate sya pag scroll mo sa kalahati ng page 
+    }, {
+        offset: '50%', // mag aanimate sya pag scroll mo sa kalahati ng page 
+    });
+
+    $('.js--wp-3').waypoint(function (direction) {
+        $('.js--wp-3').addClass('animate__animated animate__fadeIn');
+    }, {
+        offset: '50%', // mag aanimate sya pag scroll mo sa kalahati ng page 
+    });
+
+    $('.js--wp-4').waypoint(function (direction) {
+        $('.js--wp-4').addClass('animate__animated animate__pulse');
+    }, {
+        offset: '50%', // mag aanimate sya pag scroll mo sa kalahati ng page 
+    });
+
+    $('.js--wp-5').waypoint(function (direction) {
+        $('.js--wp-5').addClass('animate__animated animate__fadeInLeft');
+    }, {
+        offset: '90%', // mag aanimate sya pag scroll mo sa kalahati ng page 
+    });
+
+
+    $('.js--nav-icon').click(function () {
+
+        var nav = $('.js--main-nav');
+
+
+        nav.slideToggle(200);
+
+
+    });
+
+});
