@@ -15,8 +15,6 @@
     }
     h2 {
         font-size: 130%;
-        /* This is eqaul to 40px pixels because we set the global font size to 20 and we double it to make it 40px */
-        margin-bottom: 50px;
     }
 }
 
