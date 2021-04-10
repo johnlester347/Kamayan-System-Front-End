@@ -1,7 +1,7 @@
-$(document).ready(function() {
+$(document).ready(function () {
 
-    /* Sticky nav */
-    $('.js--section-features').waypoint(function(direction) {
+    /* Sticky nav yung pag iniscroll mo pababa is may lalabas na white na nav*/
+    $('.js--section-features').waypoint(function (direction) {
         if (direction == "down") {
             $('nav').addClass('sticky');
         } else {
@@ -12,21 +12,21 @@ $(document).ready(function() {
     });
 
 
-    /* Scroll on buttons */
-    $('.js--scroll-to-plans').click(function() {
+    /* Scroll on buttons Im hungery and Show more */
+    $('.js--scroll-to-plans').click(function () {
         $('html, body').animate({ scrollTop: $('.js--section-plans').offset().top }, 1000);
     });
-    $('.js--scroll-to-start').click(function() {
+    $('.js--scroll-to-start').click(function () {
         $('html, body').animate({ scrollTop: $('.js--section-features').offset().top }, 1000);
     });
 
 
-    /* Navigation Scrolls */
+    /* Navigation Scrolls kapag kinlick mo yung nav links mag auto scroll sya sa links na yun */
     $('a[href*="#"]')
         // Remove links that don't actually link to anything
         .not('[href="#"]')
         .not('[href="#0"]')
-        .click(function(event) {
+        .click(function (event) {
             // On-page links
             if (
                 location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
@@ -41,7 +41,7 @@ $(document).ready(function() {
                     event.preventDefault();
                     $('html, body').animate({
                         scrollTop: target.offset().top
-                    }, 1000, function() {
+                    }, 1000, function () {
                         // Callback after animation
                         // Must change focus!
                         var $target = $(target);
@@ -57,40 +57,40 @@ $(document).ready(function() {
             }
         });
 
-    /* Waypoint and animate.css */
-    $('.js--wp-1').waypoint(function(direction) {
+    /* Waypoint and animate.css eto yung animation ng mga pictures and text */
+    $('.js--wp-1').waypoint(function (direction) {
         $('.js--wp-1').addClass('animate__animated animate__fadeIn');
     }, {
         offset: '50%', // mag aanimate sya pag scroll mo sa kalahati ng page 
     });
 
-    $('.js--wp-2').waypoint(function(direction) {
+    $('.js--wp-2').waypoint(function (direction) {
         $('.js--wp-2').addClass('animate__animated animate__fadeInUp');
         // mag aanimate sya pag scroll mo sa kalahati ng page 
     }, {
         offset: '50%', // mag aanimate sya pag scroll mo sa kalahati ng page 
     });
 
-    $('.js--wp-3').waypoint(function(direction) {
+    $('.js--wp-3').waypoint(function (direction) {
         $('.js--wp-3').addClass('animate__animated animate__fadeIn');
     }, {
         offset: '50%', // mag aanimate sya pag scroll mo sa kalahati ng page 
     });
 
-    $('.js--wp-4').waypoint(function(direction) {
+    $('.js--wp-4').waypoint(function (direction) {
         $('.js--wp-4').addClass('animate__animated animate__pulse');
     }, {
         offset: '50%', // mag aanimate sya pag scroll mo sa kalahati ng page 
     });
 
-    $('.js--wp-5').waypoint(function(direction) {
+    $('.js--wp-5').waypoint(function (direction) {
         $('.js--wp-5').addClass('animate__animated animate__fadeInLeft');
     }, {
         offset: '90%', // mag aanimate sya pag scroll mo sa kalahati ng page 
     });
 
-
-    $('.js--nav-icon').click(function() {
+    /* Eto yung humburger button */
+    $('.js--nav-icon').click(function () {
 
         var nav = $('.js--main-nav');
 
